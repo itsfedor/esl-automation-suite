@@ -25,8 +25,9 @@ hand-building charts and tasks takes hours.
 
 A complete worked example: [`examples/c1-visual-data-exercise.html`](../examples/c1-visual-data-exercise.html),
 with the AI-generated chart images in [`examples/charts/`](../examples/charts/).
-The step-by-step how-to (including the image generation prompts) lives in
-the `c1-visual-data-writing` Hermes skill.
+The full how-to (any test-english exercise adapted to a student, including
+the chart pipeline and image generation prompts) lives in the
+`test-english-adapt` Hermes skill.
 
 ## Stack
 
