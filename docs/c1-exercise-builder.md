@@ -23,11 +23,14 @@ hand-building charts and tasks takes hours.
 
 ## Output
 
-[Live example: Describing Visual Data: C1](https://itsfedor.github.io/student-materials)
-([repo](https://github.com/itsfedor/student-materials))
+A complete worked example: [`examples/c1-visual-data-exercise.html`](../examples/c1-visual-data-exercise.html),
+with the AI-generated chart images in [`examples/charts/`](../examples/charts/).
+The step-by-step how-to (including the image generation prompts) lives in
+the `c1-visual-data-writing` Hermes skill.
 
 ## Stack
 
 - LLM generation level-tuned to C1
+- AI-generated chart images (image generation, consistent style set)
 - Single-file HTML/CSS
-- GitHub Pages + Actions
+- GitHub Pages for link delivery

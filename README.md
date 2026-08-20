@@ -1,7 +1,6 @@
 # 🎓 ESL Automation Suite: AI teaching pipelines that save hours every week
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/demo-live-39d353?logo=githubpages&logoColor=fff)](https://itsfedor.github.io/student-materials)
 
 Real-world AI automations for a private ESL teaching practice. Each pipeline
 turns raw material (a video, a voice note, an article) into a finished
@@ -28,7 +27,7 @@ Real artifacts produced by these pipelines:
 
 - [Lesson Guide: The Dangers of Copying Successful People (B2)](examples/lesson-guide-dangers-of-copying-successful-people-B2.html)
 - [Teacher Kit: Small Talk Course (B1)](examples/teacher-kit-small-talk-course-B1.html)
-- [Live example: C1 Describing Visual Data exercise](https://itsfedor.github.io/student-materials)
+- [C1 exercise: Describing Visual Data (full example)](examples/c1-visual-data-exercise.html) · [chart images](examples/charts/)
 
 ## How it works
 
