@@ -23,7 +23,7 @@ hand-building charts and tasks takes hours.
 
 ## Output
 
-[Live example: Describing Visual Data — C1](https://itsfedor.github.io/student-materials)
+[Live example: Describing Visual Data: C1](https://itsfedor.github.io/student-materials)
 ([repo](https://github.com/itsfedor/student-materials))
 
 ## Stack

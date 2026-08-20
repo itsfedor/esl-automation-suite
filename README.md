@@ -26,8 +26,8 @@ output is personalized to the student and the level.
 
 Real artifacts produced by these pipelines:
 
-- [Lesson Guide — The Dangers of Copying Successful People (B2)](examples/lesson-guide-dangers-of-copying-successful-people-B2.html)
-- [Teacher Kit — Small Talk Course (B1)](examples/teacher-kit-small-talk-course-B1.html)
+- [Lesson Guide: The Dangers of Copying Successful People (B2)](examples/lesson-guide-dangers-of-copying-successful-people-B2.html)
+- [Teacher Kit: Small Talk Course (B1)](examples/teacher-kit-small-talk-course-B1.html)
 - [Live example: C1 Describing Visual Data exercise](https://itsfedor.github.io/student-materials)
 
 ## How it works
