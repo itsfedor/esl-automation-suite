@@ -1,7 +1,7 @@
-# C1 Exercise Builder — personalized academic writing
+# C1 Exercise Builder: personalized academic writing
 
 **Input:** raw topic material (IELTS-style charts, tables, topic notes).
-**Output:** a personalized C1 writing exercise — "Describing Visual Data" —
+**Output:** a personalized C1 writing exercise ("Describing Visual Data")
 as a single interactive HTML file, deployed to GitHub Pages.
 
 ## Problem
@@ -14,12 +14,12 @@ hand-building charts and tasks takes hours.
 
 1. Collect the source material (charts, tables, useful language).
 2. Build the exercise for the specific student:
-   - **Cheat sheet** — the functional language for describing data
+   - **Cheat sheet**: the functional language for describing data
      (trends, proportions, comparisons).
-   - **3 tasks** — pie chart, bar chart, table — each with a clear
+   - **3 tasks**: pie chart, bar chart, table, each with a clear
      writing prompt and word budget.
 3. Render as a single self-contained HTML file (no build step).
-4. Deploy to GitHub Pages via a workflow — the student gets a link.
+4. Deploy to GitHub Pages via a workflow, and the student gets a link.
 
 ## Output
 

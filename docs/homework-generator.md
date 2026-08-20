@@ -1,7 +1,7 @@
 # Lesson Guide Generator
 
 **Input:** a YouTube video / transcript URL (any level, B1–C1 typical).
-**Output:** a complete teacher's guide — vocabulary, comprehension, 4
+**Output:** a complete teacher's guide: vocabulary, comprehension, 4
 exercises + 2 bonus, discussion questions.
 
 ## Problem
@@ -14,13 +14,13 @@ formatting for Edvibe. With 20+ lessons a week that's a full workday.
 
 1. Extract the transcript from the video (auto-generated captions are fine).
 2. Read the source material first, then build the guide:
-   - **Vocabulary** — 8–12 items from the actual transcript, with
+   - **Vocabulary**: 8–12 items from the actual transcript, with
      definitions and example sentences from the source.
-   - **Comprehension** — questions that check real understanding of the
+   - **Comprehension**: questions that check real understanding of the
      video, not generic fill-ins.
-   - **Exercises** — 4 core + 2 bonus: gap-fill, matching, rephrasing,
+   - **Exercises**: 4 core + 2 bonus: gap-fill, matching, rephrasing,
      discussion prompts. All content drawn from the transcript.
-   - **Level check** — language kept at the student's level (B1+ material
+   - **Level check**: language kept at the student's level (B1+ material
      stays B1+, no register policing outside academic contexts).
 3. Output as HTML, ready to paste into Edvibe.
 
