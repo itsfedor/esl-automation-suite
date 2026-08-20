@@ -29,6 +29,10 @@ teamwork, asking for help — but the environment has to enforce it.
 A living English classroom: students speak English to progress, and the
 teacher sees level distribution at a glance — in chat colors and in Notion.
 
+[Repo: minecraft-english-server](https://github.com/itsfedor/minecraft-english-server)
+— includes the server overview page (Apple × Notion style) deployed to
+[GitHub Pages](https://itsfedor.github.io/minecraft-english-server).
+
 ## Stack
 
 - PaperMC (Minecraft server)
