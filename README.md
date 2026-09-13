@@ -19,6 +19,7 @@ output is personalized to the student and the level.
 | **Student Voice Log** | Voice note about a student → structured entry in a Notion tracker | [docs/student-voice-log.md](docs/student-voice-log.md) |
 | **TV-Episode Homework** | Episode script → recap + 4+2 exercises, ≤15-minute homework | [docs/tv-episode-homework.md](docs/tv-episode-homework.md) |
 | **Test-English Adaptation** | Any test-english.com exercise (grammar, vocabulary, listening, reading, use of English, writing) → personalized exercise for a student at any level, A1–C1 | [docs/test-english-adaptation.md](docs/test-english-adaptation.md) |
+| **Edvibe Teacher** | Lesson plan or topic → a finished lesson inside Edvibe: sections, exercises, answer keys, wordlists with audio, built from chat by your AI agent | [docs/edvibe-teacher.md](docs/edvibe-teacher.md) |
 
 ## Example outputs
 
@@ -35,6 +36,18 @@ extract the raw material first, generate the teaching artifact second. Every
 guide follows a strict structure: level-appropriate language, vocabulary
 from the source, a fixed exercise layout, student-facing copy. The result is
 ready to paste into Edvibe or send to the student.
+
+## Skills
+
+The suite is also installable as [agentskills.io](https://agentskills.io) skills. One command puts the Edvibe Teacher skill into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
+
+```bash
+npx skills add itsfedor/esl-automation-suite --skill edvibe-teacher -g -y
+```
+
+Then ask your agent to "connect Edvibe". It installs the local CLI, walks you
+through a one-time login (the password never leaves your machine), and builds
+lessons straight from chat: [skills/edvibe-teacher/SKILL.md](skills/edvibe-teacher/SKILL.md).
 
 ## License
 
