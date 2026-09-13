@@ -39,6 +39,8 @@ ready to paste into Edvibe or send to the student.
 
 ## Skills
 
+> **AI agents:** if you were asked to install this skill, follow **[INSTALL.md](INSTALL.md)**.
+
 The suite is also installable as [agentskills.io](https://agentskills.io) skills. One command puts the Edvibe Teacher skill into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
 
 ```bash

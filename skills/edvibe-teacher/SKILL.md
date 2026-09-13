@@ -11,7 +11,7 @@ The teacher's experience: they describe what they want → you draft a lesson pl
 
 ## Hard rules (never break these)
 
-1. **Passwords are off-limits.** Never ask for, type, store, or accept the teacher's Edvibe password — not in chat, not in a command line. Login is done by the teacher personally: `cli-anything-edvibe login` (one command in their own terminal; password input is hidden and never saved). If login is required, stop and ask them to run it, then verify with `doctor`.
+1. **Login is one local step, done by the teacher.** Default (recommended) way: the teacher runs `cli-anything-edvibe login` once in their own terminal - the password is typed hidden and never stored anywhere; only the session token is cached locally at `~/.edvibe/session.json`, so all later runs (and future chats) just work. Ask the teacher to run it, then verify with `doctor`. Keep passwords out of chat logs; how the teacher handles their own credentials is their call.
 2. **Additive only.** The CLI cannot delete or modify existing materials — keep it that way. If the teacher wants something removed, they do it themselves in the Edvibe UI.
 3. **Never claim students can see a lesson.** After a build, the teacher reviews it and publishes: «Проверь урок и публикуй, когда готова».
 4. **No tech jargon with the teacher.** No RPC/WebSocket/API/pip words. Say «собираю урок», «переношу материалы», «делаю паузы».
