@@ -1,9 +1,12 @@
 # Install the ESL Automation Suite skills — instructions for AI agents
 
-If a user asked you to install the Edvibe Teacher skill (the chat-driven
-lesson builder for edvibe.com), follow these steps. The suite also carries
-`tv-episode-homework` (TV episode → homework or a per-episode lesson series);
-install it too when the user teaches with series or films.
+If a user asked you to install the ESL Automation Suite (chat-driven lesson
+building for edvibe.com, TV-episode homework, and video-review summaries),
+follow these steps. The suite carries three skills:
+
+- `edvibe-teacher` — lesson plan or topic → a finished lesson inside Edvibe
+- `tv-episode-homework` — a TV episode → homework or a per-episode lesson series
+- `esl-video-review-summary` — a recorded homework review → student-facing summary HTML
 
 End state: the skills are in YOUR skills directory, the local
 `cli-anything-edvibe` CLI is installed, and the user is logged in to their own
@@ -15,13 +18,14 @@ Try in this order:
 
 1. **Node / npx available:**
    ```bash
-   npx skills add itsfedor/esl-automation-suite --skill edvibe-teacher --skill tv-episode-homework -g -y
+   npx skills add itsfedor/esl-automation-suite --skill edvibe-teacher --skill tv-episode-homework --skill esl-video-review-summary -g -y
    ```
    `--skill '*'` (or `--all`) installs every skill in the suite. Add `-a hermes-agent`, `-a claude-code`, `-a codex` (or any other agent id) to target one agent; without `-a` every detected agent gets the skills. `--copy` copies files instead of symlinking, which is safer on Windows.
 2. **Hermes Agent** (installs into the active profile):
    ```bash
    hermes skills install itsfedor/esl-automation-suite/skills/edvibe-teacher
    hermes skills install itsfedor/esl-automation-suite/skills/tv-episode-homework
+   hermes skills install itsfedor/esl-automation-suite/skills/esl-video-review-summary
    ```
    If the identifier is rejected, add the repo as a tap first and install the
    id shown by search:
@@ -34,7 +38,7 @@ Try in this order:
    `~/.claude/skills/` for Claude Code, `~/.codex/skills/` for Codex):
    ```bash
    git clone --depth 1 https://github.com/itsfedor/esl-automation-suite.git /tmp/esl-suite
-   cp -r /tmp/esl-suite/skills/edvibe-teacher /tmp/esl-suite/skills/tv-episode-homework <your skills dir>/
+   cp -r /tmp/esl-suite/skills/* <your skills dir>/
    ```
    No git? Use curl + tar:
    ```bash
@@ -44,7 +48,7 @@ Try in this order:
 
 Start a fresh session (or reload skills) so the new skills are picked up.
 
-## 2. Install the local CLI
+## 2. Install the local CLI (edvibe-teacher only)
 
 ```bash
 sh <skills dir>/edvibe-teacher/scripts/setup.sh
@@ -87,3 +91,6 @@ The CLI also works with students: `students list`, `classroom show`,
 `homework show` are read-only, and `homework give --lesson <id> --class-id
 <id> --pupil <id>` pins a lesson to the class and sends its exercises to that
 student's homework. Run it only on an explicit request.
+
+For `esl-video-review-summary` the user needs a Deepgram API key
+(`DEEPGRAM_API_KEY`) and ffmpeg — the skill itself walks through the rest.

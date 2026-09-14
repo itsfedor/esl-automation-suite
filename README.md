@@ -22,7 +22,7 @@ Codex CLI, Cursor, or any agent that reads links):
 > Install the skills from https://github.com/itsfedor/esl-automation-suite — read and follow INSTALL.md.
 
 The agent reads [INSTALL.md](INSTALL.md) (written for agents, not humans),
-installs the two skills and the local Edvibe CLI, and walks you through a
+installs the three skills and the local Edvibe CLI, and walks you through a
 one-time login. Or run the one-liner yourself:
 
 ```bash
@@ -46,6 +46,7 @@ Real artifacts produced by these pipelines — click any screenshot to open the 
 |---|---|---|
 | **Lesson Guide Generator** | YouTube URL / transcript → full teacher's guide: vocabulary, 4 exercises + 2 bonus, discussion | [docs/homework-generator.md](docs/homework-generator.md) |
 | **Student Voice Log** | Voice note about a student → structured entry in a Notion tracker | [docs/student-voice-log.md](docs/student-voice-log.md) |
+| **Video Review Summary** | Recorded homework review (EN/RU) → student-facing HTML summary: one section per task, color-coded fixes, strengths, practice tips | [docs/esl-video-review-summary.md](docs/esl-video-review-summary.md) |
 | **TV-Episode Homework** | Episode script → recap + 4+2 exercises, ≤15-minute homework, or a per-episode lesson series inside Edvibe | [docs/tv-episode-homework.md](docs/tv-episode-homework.md) |
 | **Test-English Adaptation** | Any test-english.com exercise (grammar, vocabulary, listening, reading, use of English, writing) → personalized exercise for a student at any level, A1–C1 | [docs/test-english-adaptation.md](docs/test-english-adaptation.md) |
 | **Edvibe Teacher** | Lesson plan or topic → a finished lesson inside Edvibe: sections, exercises, answer keys, wordlists with audio, built from chat by your AI agent | [docs/edvibe-teacher.md](docs/edvibe-teacher.md) |
@@ -77,7 +78,7 @@ ready to paste into Edvibe or send to the student.
 
 > **AI agents:** if you were asked to install this skill, follow **[INSTALL.md](INSTALL.md)**.
 
-The suite is installable as [agentskills.io](https://agentskills.io) skills. One command puts them into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
+The suite is installable as [agentskills.io](https://agentskills.io) skills. One command puts all three into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
 
 ```bash
 npx skills add itsfedor/esl-automation-suite -g -y
@@ -85,8 +86,9 @@ npx skills add itsfedor/esl-automation-suite -g -y
 
 - **edvibe-teacher** builds lessons straight from chat: ask your agent to "connect Edvibe". It installs the local CLI, walks you through a one-time login (the password never leaves your machine), and writes the lesson into your own account. It also gives homework to students when you ask. [skills/edvibe-teacher/SKILL.md](skills/edvibe-teacher/SKILL.md)
 - **tv-episode-homework** turns a series episode into homework or into one unit of a per-episode course: script sourcing, recap, level-capped exercises from real lines. [skills/tv-episode-homework/SKILL.md](skills/tv-episode-homework/SKILL.md)
+- **esl-video-review-summary** turns a recorded homework review (teacher speaking EN+RU) into a student-facing HTML summary: Deepgram transcription, one section per task, color-coded fixes, strengths, practice tips. [skills/esl-video-review-summary/SKILL.md](skills/esl-video-review-summary/SKILL.md)
 
-Anyone with an Edvibe account can use them, each on their own machine with their own login. There is no server in the middle and nothing is shared between users: the CLI talks to Edvibe from the teacher's computer, under the teacher's account.
+Anyone with an Edvibe account can use the Edvibe skills, each on their own machine with their own login. There is no server in the middle and nothing is shared between users: the CLI talks to Edvibe from the teacher's computer, under the teacher's account.
 
 Target one agent explicitly (the bare command above installs to every detected agent):
 
