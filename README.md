@@ -31,11 +31,31 @@ Real artifacts produced by these pipelines:
 
 ## How it works
 
+```text
+raw material              extraction            generation             delivery
+──────────────            ──────────            ──────────             ────────
+YouTube video   ──▶  transcript fetch   ──▶  level-aware prompts ──▶  teacher's guide (HTML/text)
+voice note      ──▶  speech-to-text     ──▶  schema extraction   ──▶  Notion tracker entry
+test-english    ──▶  exercise parsing   ──▶  personalization     ──▶  student exercise
+episode script  ──▶  line selection     ──▶  level-capped items  ──▶  homework / Edvibe unit
+```
+
 The pipelines are prompt-driven automations (built on the Hermes agent):
 extract the raw material first, generate the teaching artifact second. Every
 guide follows a strict structure: level-appropriate language, vocabulary
 from the source, a fixed exercise layout, student-facing copy. The result is
 ready to paste into Edvibe or send to the student.
+
+### Design notes
+
+- **Prompt-driven, not fine-tuned.** Every lesson is different; a fixed output
+  contract plus level-aware prompts reproduces the house style without a
+  training set, and the model can be swapped at any time.
+- **Verify against the source.** Quoted transcript lines are checked
+  programmatically before a guide ships; nothing reaches a student unreviewed.
+- **Known limits.** ASR mangles names (see the skill's pitfalls); the Edvibe
+  CLI talks to an undocumented API surface, so it can break when Edvibe
+  changes — the skill documents recovery steps.
 
 ## Skills
 
