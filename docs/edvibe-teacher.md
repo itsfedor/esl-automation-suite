@@ -8,6 +8,8 @@ Unlike the other pipelines, this one does not produce a file to paste. It writes
 
 16 exercise types are supported: Match, Fill in the gaps (typed and from the box), Choose the correct option, True or False, Word order, Put the text in order, Sort into columns, multiple-choice Tests, Wordlists with auto voice-over, video blocks, writing and voice tasks, notes with hidden answer keys. A lesson is described in a small JSON spec, validated in a dry run, then built section by section.
 
+The same CLI works with your students when you need it: `students list` and `classroom show` are read-only views of your school account, and `homework give --lesson <id> --class-id <id> --pupil <id>` pins a lesson to the class and sends its exercises to that student's homework sheet. It runs only when you ask for it.
+
 ## Install
 
 ```bash

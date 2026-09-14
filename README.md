@@ -17,7 +17,7 @@ output is personalized to the student and the level.
 |---|---|---|
 | **Lesson Guide Generator** | YouTube URL / transcript → full teacher's guide: vocabulary, 4 exercises + 2 bonus, discussion | [docs/homework-generator.md](docs/homework-generator.md) |
 | **Student Voice Log** | Voice note about a student → structured entry in a Notion tracker | [docs/student-voice-log.md](docs/student-voice-log.md) |
-| **TV-Episode Homework** | Episode script → recap + 4+2 exercises, ≤15-minute homework | [docs/tv-episode-homework.md](docs/tv-episode-homework.md) |
+| **TV-Episode Homework** | Episode script → recap + 4+2 exercises, ≤15-minute homework, or a per-episode lesson series inside Edvibe | [docs/tv-episode-homework.md](docs/tv-episode-homework.md) |
 | **Test-English Adaptation** | Any test-english.com exercise (grammar, vocabulary, listening, reading, use of English, writing) → personalized exercise for a student at any level, A1–C1 | [docs/test-english-adaptation.md](docs/test-english-adaptation.md) |
 | **Edvibe Teacher** | Lesson plan or topic → a finished lesson inside Edvibe: sections, exercises, answer keys, wordlists with audio, built from chat by your AI agent | [docs/edvibe-teacher.md](docs/edvibe-teacher.md) |
 
@@ -41,15 +41,14 @@ ready to paste into Edvibe or send to the student.
 
 > **AI agents:** if you were asked to install this skill, follow **[INSTALL.md](INSTALL.md)**.
 
-The suite is also installable as [agentskills.io](https://agentskills.io) skills. One command puts the Edvibe Teacher skill into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
+The suite is also installable as [agentskills.io](https://agentskills.io) skills. One command puts them into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
 
 ```bash
-npx skills add itsfedor/esl-automation-suite --skill edvibe-teacher -g -y
+npx skills add itsfedor/esl-automation-suite -g -y
 ```
 
-Then ask your agent to "connect Edvibe". It installs the local CLI, walks you
-through a one-time login (the password never leaves your machine), and builds
-lessons straight from chat: [skills/edvibe-teacher/SKILL.md](skills/edvibe-teacher/SKILL.md).
+- **edvibe-teacher** builds lessons straight from chat: ask your agent to "connect Edvibe". It installs the local CLI, walks you through a one-time login (the password never leaves your machine), and writes the lesson into your own account. It also gives homework to students when you ask. [skills/edvibe-teacher/SKILL.md](skills/edvibe-teacher/SKILL.md)
+- **tv-episode-homework** turns a series episode into homework or into one unit of a per-episode course: script sourcing, recap, level-capped exercises from real lines. [skills/tv-episode-homework/SKILL.md](skills/tv-episode-homework/SKILL.md)
 
 ## License
 

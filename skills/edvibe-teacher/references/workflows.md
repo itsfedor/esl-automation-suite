@@ -27,6 +27,26 @@ Sizes: 9–15 exercises total for a 45–60 min lesson. Homework: 1–2 short ta
 
 If the teacher provides a transcript: base comprehension questions on real lines. If not: keep questions general.
 
+## Recipe: serial course (one lesson per TV episode)
+
+For a class that watches a series episode by episode. Each lesson lives in its own unit inside one material (a book like `Series: <Name>`), named `N <Episode Title>`. Seven blocks, always in this order, so the student knows what to expect:
+
+1. **Vocabulary** — `match`, 8 pairs for A2+ (`word -- simple definition`, level-capped).
+2. **A related-theme article** — `fillbox`: a short 3-paragraph story on the same theme as the episode (hospital life, family, honesty), NOT a retelling of the plot. Reuse the 8 vocab words as gaps **in the exact same form** as in the pair (`fix` stays `fix`, never `fixed`). `autocheck: false` when the article is graded by hand.
+3. **Watch the episode** — `button` with the streaming link the teacher gives, text `Season N, Episode M — "Title"`. (`video` also works when the source is YouTube; a `button` keeps non-YouTube players clickable.)
+4. **True / False / Not Stated** — `truefalse`, 7 statements, roughly 3 true / 3 false / 1 not stated, `show_number: false`.
+5. **Teacher key** — `note` with `hidden: true`: each statement + `True`/`False`/`Not Stated` + a verbatim quote from the script that proves it.
+6. **Choose the best reply** — `test`, 4 situations built on the episode's moral conflicts (honesty, rules vs people, asking for help). One option follows the episode's lesson and keeps the conversation going; the other two contradict it or kill the conversation. Never two defensible options. Vary the correct position.
+7. **Speaking** — `voice`, 2 opinion questions about the episode, 2–3 min, each tied to the student's own life, language inside the level (A2+: present/past simple, no conditionals).
+
+Verification before handing the lesson over: every statement traceable to a quoted line of the script, every gap word present in the vocab list, quotes checked twice against the transcript.
+
+Script sourcing, recap writing and the level table live in the `tv-episode-homework` skill. Build with:
+
+```bash
+cli-anything-edvibe lesson build --file episode-spec.json --material <series_book_id>
+```
+
 ## Recipe: teacher's ready handout (HTML)
 
 - **Fast path:** `cli-anything-edvibe import --html «file.html»` — creates a material + lesson with one note per section. Good for reference materials and keys.
@@ -37,6 +57,14 @@ If the teacher provides a transcript: base comprehension questions on real lines
 - Section `Homework` lands in the lesson's built-in homework section automatically.
 - Keep ≤15 min: 1 autocheck exercise + 1 `writing` / `voice` task.
 - Content only — no platform instructions.
+- To send homework to a student, use the classroom flow, not a second build:
+
+```bash
+cli-anything-edvibe classroom show --student "Name"          # class id + current unit
+cli-anything-edvibe homework give --lesson <id> --class-id <id> --pupil <id>
+```
+
+`homework give` pins the lesson as the class's current unit and attaches its exercises to the student's homework sheet. Ask the teacher first, then verify with `classroom show`.
 
 ## Levels (quick guidance)
 
@@ -52,3 +80,4 @@ If the teacher provides a transcript: base comprehension questions on real lines
 - [ ] Answer keys in `hidden: true` notes; nothing revealing in visible blocks.
 - [ ] Homework included when asked; tasks short and student-facing.
 - [ ] Section names short and in the teacher's language.
+- [ ] For episode lessons: quotes verified against the script, gap forms match vocab forms.
