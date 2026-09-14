@@ -50,6 +50,18 @@ npx skills add itsfedor/esl-automation-suite -g -y
 - **edvibe-teacher** builds lessons straight from chat: ask your agent to "connect Edvibe". It installs the local CLI, walks you through a one-time login (the password never leaves your machine), and writes the lesson into your own account. It also gives homework to students when you ask. [skills/edvibe-teacher/SKILL.md](skills/edvibe-teacher/SKILL.md)
 - **tv-episode-homework** turns a series episode into homework or into one unit of a per-episode course: script sourcing, recap, level-capped exercises from real lines. [skills/tv-episode-homework/SKILL.md](skills/tv-episode-homework/SKILL.md)
 
+Anyone with an Edvibe account can use them, each on their own machine with their own login. There is no server in the middle and nothing is shared between users: the CLI talks to Edvibe from the teacher's computer, under the teacher's account.
+
+Target one agent explicitly (the bare command above installs to every detected agent):
+
+```bash
+npx skills add itsfedor/esl-automation-suite -g -y --copy -a hermes-agent   # Hermes Agent
+npx skills add itsfedor/esl-automation-suite -g -y --copy -a claude-code    # Claude Code
+npx skills add itsfedor/esl-automation-suite -g -y --copy -a codex          # Codex CLI
+```
+
+No install needed to try it in a chat: `npx skills use itsfedor/esl-automation-suite@edvibe-teacher`.
+
 ## License
 
 [MIT](LICENSE)

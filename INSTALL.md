@@ -17,7 +17,7 @@ Try in this order:
    ```bash
    npx skills add itsfedor/esl-automation-suite --skill edvibe-teacher --skill tv-episode-homework -g -y
    ```
-   `--skill '*'` (or `--all`) installs every skill in the suite.
+   `--skill '*'` (or `--all`) installs every skill in the suite. Add `-a hermes-agent`, `-a claude-code`, `-a codex` (or any other agent id) to target one agent; without `-a` every detected agent gets the skills. `--copy` copies files instead of symlinking, which is safer on Windows.
 2. **Hermes Agent** (installs into the active profile):
    ```bash
    hermes skills install itsfedor/esl-automation-suite/skills/edvibe-teacher
