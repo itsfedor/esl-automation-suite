@@ -1,15 +1,44 @@
 # 🎓 ESL Automation Suite: AI teaching pipelines that save hours every week
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Format: agentskills.io](https://img.shields.io/badge/format-agentskills.io-0075de)](https://agentskills.io)
 
 Real-world AI automations for a private ESL teaching practice. Each pipeline
 turns raw material (a video, a voice note, an article) into a finished
 teaching artifact in minutes instead of hours. No generic templates, every
 output is personalized to the student and the level.
 
+**Quick links:** [Install](#install) · [What it makes](#what-it-makes) · [Pipelines](#pipelines) · [How it works](#how-it-works) · [Skills](#skills) · [Docs](docs/) · [License](#license)
+
 <p align="center">
   <img src="assets/preview.jpg" alt="ESL Automation Suite" width="80%" />
 </p>
+
+## Install
+
+**Fastest way — paste this into your AI agent** (Hermes Agent, Claude Code,
+Codex CLI, Cursor, or any agent that reads links):
+
+> Install the skills from https://github.com/itsfedor/esl-automation-suite — read and follow INSTALL.md.
+
+The agent reads [INSTALL.md](INSTALL.md) (written for agents, not humans),
+installs the two skills and the local Edvibe CLI, and walks you through a
+one-time login. Or run the one-liner yourself:
+
+```bash
+npx skills add itsfedor/esl-automation-suite -g -y
+```
+
+Prerequisites: [Node.js](https://nodejs.org/) 18+ and Python 3.9+ (Linux/macOS).
+Nothing else — no server, no account needed to install.
+
+## What it makes
+
+Real artifacts produced by these pipelines — click any screenshot to open the full example:
+
+| [![Lesson guide from a YouTube video (B2)](examples/screenshots/lesson-guide-B2.jpg)](examples/lesson-guide-dangers-of-copying-successful-people-B2.html) | [![Small-talk teacher kit (B1)](examples/screenshots/teacher-kit-B1.jpg)](examples/teacher-kit-small-talk-course-B1.html) | [![C1 visual-data exercise](examples/screenshots/c1-exercise.jpg)](examples/c1-visual-data-exercise.html) |
+|---|---|---|
+| **Lesson guide** — built from a 3-minute video (B2) | **Teacher kit** — small-talk course (B1) | **C1 writing exercise** with charts · [chart images](examples/charts/) |
 
 ## Pipelines
 
@@ -21,24 +50,11 @@ output is personalized to the student and the level.
 | **Test-English Adaptation** | Any test-english.com exercise (grammar, vocabulary, listening, reading, use of English, writing) → personalized exercise for a student at any level, A1–C1 | [docs/test-english-adaptation.md](docs/test-english-adaptation.md) |
 | **Edvibe Teacher** | Lesson plan or topic → a finished lesson inside Edvibe: sections, exercises, answer keys, wordlists with audio, built from chat by your AI agent | [docs/edvibe-teacher.md](docs/edvibe-teacher.md) |
 
-## Example outputs
-
-Real artifacts produced by these pipelines:
-
-- [Lesson Guide: The Dangers of Copying Successful People (B2)](examples/lesson-guide-dangers-of-copying-successful-people-B2.html)
-- [Teacher Kit: Small Talk Course (B1)](examples/teacher-kit-small-talk-course-B1.html)
-- [C1 exercise: Describing Visual Data (full example)](examples/c1-visual-data-exercise.html) · [chart images](examples/charts/)
-
 ## How it works
 
-```text
-raw material              extraction            generation             delivery
-──────────────            ──────────            ──────────             ────────
-YouTube video   ──▶  transcript fetch   ──▶  level-aware prompts ──▶  teacher's guide (HTML/text)
-voice note      ──▶  speech-to-text     ──▶  schema extraction   ──▶  Notion tracker entry
-test-english    ──▶  exercise parsing   ──▶  personalization     ──▶  student exercise
-episode script  ──▶  line selection     ──▶  level-capped items  ──▶  homework / Edvibe unit
-```
+<p align="center">
+  <img src="assets/pipeline-flow.png" alt="Pipeline architecture: raw material → extraction → generation → delivery" width="100%" />
+</p>
 
 The pipelines are prompt-driven automations (built on the Hermes agent):
 extract the raw material first, generate the teaching artifact second. Every
@@ -61,11 +77,7 @@ ready to paste into Edvibe or send to the student.
 
 > **AI agents:** if you were asked to install this skill, follow **[INSTALL.md](INSTALL.md)**.
 
-**Prerequisites:** [Node.js](https://nodejs.org/) 18+ (for the `npx skills`
-installer) and Python 3.9+ (for the Edvibe CLI — Linux/macOS). Nothing else:
-no server, no account needed to install.
-
-The suite is also installable as [agentskills.io](https://agentskills.io) skills. One command puts them into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
+The suite is installable as [agentskills.io](https://agentskills.io) skills. One command puts them into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
 
 ```bash
 npx skills add itsfedor/esl-automation-suite -g -y

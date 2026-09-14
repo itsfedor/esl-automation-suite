@@ -1,4 +1,4 @@
-# Install the Edvibe Teacher skills - instructions for AI agents
+# Install the ESL Automation Suite skills — instructions for AI agents
 
 If a user asked you to install the Edvibe Teacher skill (the chat-driven
 lesson builder for edvibe.com), follow these steps. The suite also carries
