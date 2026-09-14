@@ -11,8 +11,8 @@ lives in the teacher's head until the next lesson.
 
 ## Pipeline
 
-1. Teacher sends a voice note right after the lesson: "Student A struggled with
-   describing charts, needs more practice with pie charts, great vocabulary".
+1. Teacher sends a voice note right after the lesson: "the student struggled
+   with describing charts, needs more practice with pie charts, great vocabulary".
 2. The note is transcribed and parsed into structured fields: student name,
    date, topic, what went well, what needs work, next steps.
 3. A dated entry is created in the Notion "Students Tracker" database

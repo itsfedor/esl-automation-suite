@@ -41,6 +41,10 @@ ready to paste into Edvibe or send to the student.
 
 > **AI agents:** if you were asked to install this skill, follow **[INSTALL.md](INSTALL.md)**.
 
+**Prerequisites:** [Node.js](https://nodejs.org/) 18+ (for the `npx skills`
+installer) and Python 3.9+ (for the Edvibe CLI — Linux/macOS). Nothing else:
+no server, no account needed to install.
+
 The suite is also installable as [agentskills.io](https://agentskills.io) skills. One command puts them into your agent (Hermes Agent, Claude Code, Codex CLI, and 70+ more):
 
 ```bash
@@ -61,6 +65,12 @@ npx skills add itsfedor/esl-automation-suite -g -y --copy -a codex          # Co
 ```
 
 No install needed to try it in a chat: `npx skills use itsfedor/esl-automation-suite@edvibe-teacher`.
+
+## Troubleshooting
+
+- **`npx skills add` fails** — check `node -v`; the installer needs Node 18+.
+- **Edvibe CLI won't log in** — run `cli-anything-edvibe login` once in a terminal (the agent walks you through it); the session is cached locally.
+- **Agent misbehaves mid-task** — the full troubleshooting list lives in [skills/edvibe-teacher/references/troubleshooting.md](skills/edvibe-teacher/references/troubleshooting.md).
 
 ## License
 
