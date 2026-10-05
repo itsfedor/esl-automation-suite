@@ -3,6 +3,8 @@
   <img alt="ESL Automation Suite — six open-source AI pipelines for teachers — by Fedor Molodtsov" src="assets/banner-light.png" width="100%">
 </picture>
 
+<p align="center"><sub><b>Fedor Molodtsov</b> — AI automation engineer · <a href="https://github.com/itsfedor">github.com/itsfedor</a></sub></p>
+
 # 🎓 ESL Automation Suite: AI teaching pipelines that save hours every week
 
 **Landing page:** [itsfedor.github.io/prism-landing](https://itsfedor.github.io/prism-landing/)
