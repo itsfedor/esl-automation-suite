@@ -23,6 +23,11 @@ output is personalized to the student and the level.
   <img src="assets/preview.jpg" alt="ESL Automation Suite" width="80%" />
 </p>
 
+<p align="center">
+  <img src="assets/pipeline-demo.gif" alt="Live pipeline demo: a YouTube video becomes a ready teacher's guide for an ESL class — ESL Automation Suite by Fedor Molodtsov" width="780">
+</p>
+<p align="center"><sub>The pipeline demo from the <a href="https://itsfedor.github.io/prism-landing/">live landing page</a> — a video goes in, a ready teacher's guide comes out.</sub></p>
+
 ## Install
 
 **Fastest way — paste this into your AI agent** (Hermes Agent, Claude Code,
