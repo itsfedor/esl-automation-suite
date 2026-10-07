@@ -19,9 +19,6 @@ output is personalized to the student and the level.
 
 **Quick links:** [Install](#install) · [What it makes](#what-it-makes) · [Pipelines](#pipelines) · [How it works](#how-it-works) · [Skills](#skills) · [Docs](docs/) · [License](#license)
 
-<p align="center">
-  <img src="assets/preview.jpg" alt="ESL Automation Suite" width="80%" />
-</p>
 
 <p align="center">
   <img src="assets/pipeline-demo.gif" alt="Live pipeline demo: a YouTube video becomes a ready teacher's guide for an ESL class — ESL Automation Suite by Fedor Molodtsov" width="780">
