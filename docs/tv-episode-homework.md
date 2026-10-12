@@ -40,6 +40,6 @@ order, self-grading exercises, answer keys hidden from students.
 
 - Script extraction (script sites, browser User-Agent, wiki wikitext for cross-checks)
 - LLM generation with a fixed exercise layout, verbatim quotes and a strict time budget
-- Edvibe build through `cli-anything-edvibe lesson build` (see [docs/edvibe-teacher.md](edvibe-teacher.md))
+- Edvibe build through `cli-edvibe lesson build` (see [docs/edvibe-teacher.md](edvibe-teacher.md))
 
 Skill: [skills/tv-episode-homework/SKILL.md](../skills/tv-episode-homework/SKILL.md)

@@ -9,7 +9,7 @@ follow these steps. The suite carries three skills:
 - `esl-video-review-summary` — a recorded homework review → student-facing summary HTML
 
 End state: the skills are in YOUR skills directory, the local
-`cli-anything-edvibe` CLI is installed, and the user is logged in to their own
+`cli-edvibe` CLI is installed, and the user is logged in to their own
 Edvibe account.
 
 ## 1. Get the skills into your skills directory
@@ -63,7 +63,7 @@ the skill (`assets/`) - nothing else to download. (Windows support is coming.)
 Ask the user to run this once in their own terminal:
 
 ```
-cli-anything-edvibe login
+cli-edvibe login
 ```
 
 The password is typed hidden and never stored; the session token is cached
@@ -74,7 +74,7 @@ whoever runs it: every teacher uses the tool with their own Edvibe account.
 ## 4. Verify
 
 ```bash
-cli-anything-edvibe doctor
+cli-edvibe doctor
 ```
 
 All checks green = ready.

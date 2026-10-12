@@ -2,8 +2,8 @@
 
 ## Readiness
 
-- `cli-anything-edvibe` not found → run the skill's `scripts/setup.sh` (installs locally, no sudo). If it still isn't found, open a new terminal.
-- `doctor` shows `login: FAIL` → the teacher runs `cli-anything-edvibe login` in their own terminal. Never ask for the password and never run login on their behalf. Then re-run `doctor`.
+- `cli-edvibe` not found → run the skill's `scripts/setup.sh` (installs locally, no sudo). If it still isn't found, open a new terminal.
+- `doctor` shows `login: FAIL` → the teacher runs `cli-edvibe login` in their own terminal. Never ask for the password and never run login on their behalf. Then re-run `doctor`.
 
 ## During work
 

@@ -21,7 +21,7 @@ Works with Hermes Agent, Claude Code, Codex CLI, and any agent that reads SKILL.
 ## First run
 
 1. Ask your agent: "connect Edvibe".
-2. The agent installs the local CLI and asks you to run one command in your own terminal: `cli-anything-edvibe login`. Your password is typed there, never stored, and never seen by anyone.
+2. The agent installs the local CLI and asks you to run one command in your own terminal: `cli-edvibe login`. Your password is typed there, never stored, and never seen by anyone.
 3. Then just describe the lesson you need. The agent shows a plan, you approve, and the lesson appears in Edvibe. You review and publish.
 
 ## How it works

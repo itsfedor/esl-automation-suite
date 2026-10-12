@@ -44,12 +44,12 @@ Verification before handing the lesson over: every statement traceable to a quot
 Script sourcing, recap writing and the level table live in the `tv-episode-homework` skill. Build with:
 
 ```bash
-cli-anything-edvibe lesson build --file episode-spec.json --material <series_book_id>
+cli-edvibe lesson build --file episode-spec.json --material <series_book_id>
 ```
 
 ## Recipe: teacher's ready handout (HTML)
 
-- **Fast path:** `cli-anything-edvibe import --html «file.html»` — creates a material + lesson with one note per section. Good for reference materials and keys.
+- **Fast path:** `cli-edvibe import --html «file.html»` — creates a material + lesson with one note per section. Good for reference materials and keys.
 - **Full path:** convert the handout into a spec with interactive exercises (recipes above). Prefer this for actual lessons and homework.
 
 ## Recipe: homework
@@ -60,8 +60,8 @@ cli-anything-edvibe lesson build --file episode-spec.json --material <series_boo
 - To send homework to a student, use the classroom flow, not a second build:
 
 ```bash
-cli-anything-edvibe classroom show --student "Name"          # class id + current unit
-cli-anything-edvibe homework give --lesson <id> --class-id <id> --pupil <id>
+cli-edvibe classroom show --student "Name"          # class id + current unit
+cli-edvibe homework give --lesson <id> --class-id <id> --pupil <id>
 ```
 
 `homework give` pins the lesson as the class's current unit and attaches its exercises to the student's homework sheet. Ask the teacher first, then verify with `classroom show`.

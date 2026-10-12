@@ -114,7 +114,7 @@ No install needed to try it in a chat: `npx skills use itsfedor/esl-automation-s
 ## Troubleshooting
 
 - **`npx skills add` fails** — check `node -v`; the installer needs Node 18+.
-- **Edvibe CLI won't log in** — run `cli-anything-edvibe login` once in a terminal (the agent walks you through it); the session is cached locally.
+- **Edvibe CLI won't log in** — run `cli-edvibe login` once in a terminal (the agent walks you through it); the session is cached locally.
 - **Agent misbehaves mid-task** — the full troubleshooting list lives in [skills/edvibe-teacher/references/troubleshooting.md](skills/edvibe-teacher/references/troubleshooting.md).
 
 ## License

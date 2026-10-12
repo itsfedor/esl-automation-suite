@@ -66,7 +66,7 @@ Rules that keep it honest:
 Structure and build steps live in the `edvibe-teacher` skill (`references/workflows.md`, recipe "serial course"). The shape per episode: vocabulary match (8 pairs) → fillbox article on a related theme → "Watch the episode" button → 7 True/False/Not Stated statements → hidden note with the teacher key and script quotes → test with 4 best-reply situations → voice with 2 questions.
 
 ```bash
-cli-anything-edvibe lesson build --file episode-spec.json --material <series_book_id>
+cli-edvibe lesson build --file episode-spec.json --material <series_book_id>
 ```
 
 Build ahead of time if that is what the teacher asked for. Giving the homework to a student is a separate step (`homework give`) and only on request.

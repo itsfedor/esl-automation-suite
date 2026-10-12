@@ -1,6 +1,6 @@
 # Lesson spec — full format (v1)
 
-A lesson spec is one JSON file. `cli-anything-edvibe lesson build` turns it into a real lesson: sections + exercises, numbered automatically per section.
+A lesson spec is one JSON file. `cli-edvibe lesson build` turns it into a real lesson: sections + exercises, numbered automatically per section.
 
 ## Skeleton
 

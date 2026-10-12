@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install the local Edvibe CLI (cli-anything-edvibe) for a teacher's machine.
+# Install the local Edvibe CLI (cli-edvibe) for a teacher's machine.
 # No sudo required. Prefers uv, then pipx, then pip --user, then a private venv.
 SELF_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 SKILL_DIR=$(dirname "$SELF_DIR")
@@ -23,7 +23,7 @@ if [ -z "$PY" ]; then
   exit 1
 fi
 
-echo "Installing cli-anything-edvibe from: $WHEEL"
+echo "Installing cli-edvibe from: $WHEEL"
 ok=0
 if command -v uv >/dev/null 2>&1; then
   uv tool install --force "$WHEEL" && ok=1 || echo "uv install failed, trying pipx..."
@@ -46,13 +46,13 @@ if [ "$ok" = 0 ]; then
 fi
 
 echo
-if command -v cli-anything-edvibe >/dev/null 2>&1; then
+if command -v cli-edvibe >/dev/null 2>&1; then
   echo "Installed. Current state:"
-  cli-anything-edvibe doctor || true
+  cli-edvibe doctor || true
   echo
   echo "Next step — the teacher runs this personally in a terminal (password stays with them):"
-  echo "    cli-anything-edvibe login"
+  echo "    cli-edvibe login"
 else
-  echo "Installed, but 'cli-anything-edvibe' is not on PATH in this shell."
-  echo "Open a new terminal and run: cli-anything-edvibe doctor"
+  echo "Installed, but 'cli-edvibe' is not on PATH in this shell."
+  echo "Open a new terminal and run: cli-edvibe doctor"
 fi
