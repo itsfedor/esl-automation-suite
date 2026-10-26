@@ -9,7 +9,7 @@
 
 **Landing page:** [itsfedor.github.io/prism-landing](https://itsfedor.github.io/prism-landing/)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](LICENSE)
 [![Format: agentskills.io](https://img.shields.io/badge/format-agentskills.io-0075de)](https://agentskills.io)
 
 Real-world AI automations for a private ESL teaching practice. Each pipeline
@@ -119,4 +119,4 @@ No install needed to try it in a chat: `npx skills use itsfedor/esl-automation-s
 
 ## License
 
-[MIT](LICENSE)
+AGPL-3.0. See [LICENSE](LICENSE). If AGPL does not fit your use case, a commercial license is available — [COMMERCIAL.md](COMMERCIAL.md).
