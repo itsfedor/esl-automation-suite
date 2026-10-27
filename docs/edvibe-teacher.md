@@ -38,4 +38,4 @@ Works with Hermes Agent, Claude Code, Codex CLI, and any agent that reads SKILL.
 
 ## License
 
-AGPL-3.0, same as the suite.
+MIT, same as the suite.
